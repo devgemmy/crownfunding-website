@@ -1,5 +1,18 @@
+@import "animation.css";
+
+@font-face {
+    font-family: "Commissioner";
+    src: url(../fonts/Commissioner/static/Commissioner-Regular.ttf);
+}
+
+
 * {
-    margin: 0px auto;
+    margin: 0px;
+    font-family: "Commissioner"
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 :root {
@@ -15,6 +28,8 @@
     --bolder: 400; 
     --boldest: 700;
 }
+
+
 
 .banner {
     width: 100%;
@@ -57,45 +72,134 @@ main {
     margin: 0px 25%;
 }
 
-main div {
-    display: none;
+main p{
+    color: var(--light-gray);
 }
 
 .mastercraft {
     display: block;
     bottom: 80px;
     border-radius: 10px;
-    padding: 40px;
+    padding:0px 20px 40px;
     position: relative;
     background: #fff;
     text-align: center
 }
+
+.master_desc, 
+.btn_group,
+.master_title {
+    margin-bottom: 20px;
+}
+
+
 .mastercraft-icon {
-    position: absolute;
-    bottom: 85%;
+    position: relative;
+    bottom: 2em;
     margin: 0 auto;
-    left: 21em;
 }
 
 .fund-btn {
     background: var(--brand-color);
     color: #fff;
     border: 1px solid var(--brand-color);
-    border-radius: 23px;
-    width: 150px;
-    height: 40px;
 }
+
+.fund-btn:hover {
+    background-color: var(--brand-color-dark);
+} 
+
+
+.btn_group{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0px 5%;
+}
+
+.btn_group button {
+    width: 180px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.bookmark-circ {
+    fill:#2F2F2F;
+}
+.bookmark-path {
+    fill: #B1B1B1;
+}
+
 .bookmark-btn {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 20px;
     background: var(--light-gray);
     border: 1px solid var(--light-gray);
-    border-radius: 23px;
     text-align: left;
     padding: 0px;
-    width: 150px;
-    height: 40px;
 }
 
 .bookmark-btn img {
-    width: 30px;
-    
+    width: 50px; 
+}
+
+.bookmark-btn:hover {
+    opacity: 0.5;
+}
+
+.figures{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Commissioner";
+  height: 150px;
+  padding: 40px 50px;  
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  bottom: 50px;
+
+}
+
+.figure1{
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+        font-size: 30px;
+        border-right: 2px solid;
+        border-color: rgb(219, 218, 218) ;
+        width: 500px;
+    }
+
+.figure2{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 30px;
+    border-right: 2px solid;
+    border-color: rgb(219, 218, 218);
+    width: 500px;
+    text-align: center;
+    padding-right: 40px;
+}
+
+.figure3{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 30px;
+    width: 500px;
+    padding-left: 35px;
+}
+
+.figure1 span,
+.figure2 span,
+.figure3 span{
+    font-weight: 200;
+    color: var(--light-gray);
+    font-size: 14px;
+    margin-top: 5px;
 }
