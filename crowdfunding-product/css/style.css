@@ -59,8 +59,14 @@ button:hover {
     color: #fff;
 }
 
+.list{
+    /* margin-right: 10px; */
+    /* background-color: red;  */
+}
+
 ul.list li {
     margin: 0 0 0 55px;
+    font-size: 10px;
 }
 
 
@@ -74,6 +80,7 @@ main {
 
 main p{
     color: var(--light-gray);
+    
 }
 
 .mastercraft {
@@ -150,18 +157,20 @@ main p{
     opacity: 0.5;
 }
 
+.fig_progress{
+    background-color: #fff;
+    height: 200px;
+    position: relative;
+    bottom: 50px;
+    font-family: "Commissioner";
+}
+
 .figures{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: "Commissioner";
-  height: 150px;
   padding: 40px 50px;  
-  background-color: #fff;
   border-radius: 10px;
-  position: relative;
-  bottom: 50px;
-
 }
 
 .figure1{
@@ -202,4 +211,124 @@ main p{
     color: var(--light-gray);
     font-size: 14px;
     margin-top: 5px;
+}
+
+.progress_bar {
+    width: 570px;
+    height: 10px;
+    color: #000!important;
+    background-color: #f1f1f1!important;
+    border-radius: 16px;
+    position: relative;
+    top: 5px;
+    margin: 0px 50px;
+}
+
+.progress_bar div{
+    width: 80%;
+    height: 10px;
+    background: var(--brand-color);
+    border-radius: 16px;
+}
+
+.progress_bar div:hover{
+    color: #fff!important;
+    background-color: #2196F3!important;
+}
+
+.about-this-project{
+    height:970px;
+    background-color: white;
+    padding: 40px 30px;
+    border: 1px solid;
+    border-color: var(--light-gray);
+    border-radius: 5px;
+}
+
+.about-this-project h4{
+    margin-bottom: 30px;
+    line-height: 1.7;  
+}
+
+.text{
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.text1{
+    line-height: 1.7;
+}
+
+
+.bamboo_cont{
+    height:165px;
+    border: 2px solid var(--light-gray);
+    border-radius: 10px;
+    padding: 20px 20px;
+    margin-top: 20px;
+}
+
+.top,
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bamboo{
+    font-weight: 700;
+}
+
+.pledge{
+    color: var(--brand-color);
+}
+
+.middle{
+    margin: 20px 0px; 
+    line-height: 1.7; 
+}
+
+.big_left{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.bottom .left{
+    font-size: 12px;
+    font-weight: 300;
+    position: relative;
+    bottom: 7px;
+    color: var(--light-gray);
+}
+
+.reward_btn{
+    width: 170px;
+}
+
+.reward_btn button{
+    height: 30px;
+    border: 2px solid;
+    border-radius:20px;
+    color: white;
+    background-color: var(--brand-color);
+    padding: 20px 40px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.opaque {
+    opacity: 0.5; 
+}
+
+.reward_btn1 button{
+    height: 30px;
+    border: 2px solid;
+    border-radius:20px;
+    color: white;
+    background-color: var(--light-gray);
+    padding: 20px 40px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
 }
