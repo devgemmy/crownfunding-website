@@ -23,6 +23,7 @@ button:hover {
     --black: hsl(0, 0%, 0%);
     --dark-gray: hsl(0, 0%, 48%);
     --light-gray: hsl(0, 0%, 72%);
+    --bright-gray: hsl(0%, 0%, 85%);
     --font-size: 16px;
     --bold: 400; 
     --bolder: 400; 
@@ -57,11 +58,6 @@ button:hover {
     list-style: none;
     width: 30%;
     color: #fff;
-}
-
-.list{
-    /* margin-right: 10px; */
-    /* background-color: red;  */
 }
 
 ul.list li {
@@ -239,10 +235,15 @@ main p{
 .about-this-project{
     height:970px;
     background-color: white;
-    padding: 40px 30px;
+    
     border: 1px solid;
     border-color: var(--light-gray);
     border-radius: 5px;
+}
+
+.this-project{
+    height: 970px;
+    padding: 40px 30px;
 }
 
 .about-this-project h4{
@@ -277,6 +278,7 @@ main p{
 
 .bamboo{
     font-weight: 700;
+    margin-right: 20px;
 }
 
 .pledge{
@@ -331,4 +333,76 @@ main p{
     display: inline-flex;
     align-items: center;
     font-size: 13px;
+}
+
+.close_icon{
+    /* background-color: #2196F3; */
+    position: relative;
+    left: 811px;
+    bottom: 10px;
+}
+input{
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+input:hover{
+    border-color: var(--brand-color);
+}
+
+.top_right{
+    display: flex;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.top_cont{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.about-this-project h3{
+    margin-bottom: 20px;
+}
+
+.about-this-project p{
+    margin-bottom: 20px;
+}
+
+.index {
+    bottom: 107rem;
+    width: 47%;
+    padding: 1.5%;
+    margin: 10% auto;
+}
+
+.index:hover{
+    cursor: pointer;
+}
+
+.modal-backdrop {
+    width: 100%;
+    top: 0px;
+    position: absolute;
+    height: 300vh;
+    z-index: 99;
+    background: rgb(8 8 8 / 35%);
+}
+
+.modal_pledge{
+    color: black;
+    font-weight: 700
+}
+
+.modal_pledge:hover{
+    color: var(--brand-color);
+}
+
+.border-green{
+    border: 2px solid var(--brand-color);
+
 }
